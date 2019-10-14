@@ -34,14 +34,12 @@ source ~/.zsh/setopt.zsh
 
 # Aliases.
 source ~/.aliases
-source ~/.aliases_private
 
 # Functions.
 source ~/.functions
-source ~/.functions_private
 
 # Tracks your most used directories, based on frecency with z.
-source ~/.zsh/plugins/z/z.sh
+source ~/.oh-my-zsh/plugins/z/z.sh
 
 # dircolors.
 if [ -x "$(command -v dircolors)" ]; then
@@ -49,9 +47,9 @@ if [ -x "$(command -v dircolors)" ]; then
 fi
 
 # fzf key bindings.
-if [ -x "$(command -v fzf)" ]; then
-    source ~/.fzf/shell/key-bindings.zsh
-fi
+# if [ -x "$(command -v fzf)" ]; then
+#    source ~/.fzf/shell/key-bindings.zsh
+# fi
 
 # Manage SSH with Keychain.
 if [ -x "$(command -v keychain)" ]; then
